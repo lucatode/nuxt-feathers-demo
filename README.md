@@ -9,3 +9,5 @@ I took the project generated with the "create-nuxt-app" of the nuxt-community an
 This way you have a more complete framework, with a structure under the server folder.
 
 Also the dependencies are updated.
+
+It has Vuetify as the frontend.
