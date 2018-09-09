@@ -1,6 +1,4 @@
-# feathers-nuxt
-
-> My dazzling Nuxt.js project
+# feathers-nuxt -WIP
 
 ## Just a Feathers - Nuxt enviroment.
 
