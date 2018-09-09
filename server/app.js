@@ -13,7 +13,7 @@ const express = require('@feathersjs/express');
 const socketio = require('@feathersjs/socketio');
 
 const middleware = require('./middleware')
-const services = require('./services');
+// const services = require('./services');
 const appHooks = require('./app.hooks');
 const channels = require('./channels');
 
@@ -21,7 +21,6 @@ const channels = require('./channels');
 const app = express(feathers());
 
 app.configure(configuration())
-  .configure(middleware)
 
 app.use(compress());
 app.use(helmet());
@@ -36,7 +35,7 @@ app.configure(socketio());
 // Configure other middleware (see `middleware/index.js`)
 app.configure(middleware);
 // Set up our services (see `services/index.js`)
-app.configure(services);
+//app.configure(services);  Services are moved to middlerware
 // Set up event channels (see channels.js)
 app.configure(channels);
 
